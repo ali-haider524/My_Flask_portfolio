@@ -90,6 +90,32 @@ h1, h2, h3 {
     transform: scale(1.1);
 }
 
+/* Contact Form */
+#contact-form input,
+#contact-form textarea {
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #9a3412;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #9a3412;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7c2d12;
+    text-decoration: none;
+}
+
 /* Animations */
 @keyframes cardFadeIn {
     to {
@@ -97,6 +123,27 @@ h1, h2, h3 {
         transform: translateY(0);
     }
 }
+
+/* @keyframes sectionFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-visible {
+    animation: sectionFadeInUp 0.8s ease-out forwards;
+} */
 
 /* Section Styling */
 .section-alt {
@@ -199,6 +246,10 @@ section {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    #contact-form {
+        max-width: 100%;
     }
 }
 
